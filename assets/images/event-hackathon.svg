@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-hack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051923"/>
+      <stop offset="50%" stop-color="#003554"/>
+      <stop offset="100%" stop-color="#006494"/>
+    </linearGradient>
+    <linearGradient id="neon-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="100%" stop-color="#05b292"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bg-hack)"/>
+  
+  <!-- Binary Matrix code stream lines -->
+  <g fill="#00f5d4" opacity="0.12" font-family="monospace" font-size="12">
+    <text x="500" y="50">01001000 01000001 01000011 01001011</text>
+    <text x="520" y="80">const solve = async () =&gt; { return true; }</text>
+    <text x="490" y="110">git commit -m "feat: winning prototype"</text>
+    <text x="540" y="140">while(coding) { drinkCoffee(); build(); }</text>
+    <text x="510" y="170">npm run deploy --production --success</text>
+    <text x="530" y="200">10110010 01101101 01110000 01100001</text>
+  </g>
+  
+  <!-- Code Terminal Window Illustration -->
+  <g transform="translate(480, 130)">
+    <rect width="280" height="190" rx="10" fill="#031d2e" stroke="#00f5d4" stroke-width="2" opacity="0.95"/>
+    <!-- Terminal header -->
+    <rect width="280" height="30" rx="10" fill="#02121d"/>
+    <circle cx="20" cy="15" r="5" fill="#ef4444"/>
+    <circle cx="35" cy="15" r="5" fill="#f59e0b"/>
+    <circle cx="50" cy="15" r="5" fill="#10b981"/>
+    <text x="70" y="20" fill="#94a3b8" font-family="monospace" font-size="11">bash - hack-o-utsav.sh</text>
+    
+    <!-- Code text inside terminal -->
+    <text x="20" y="60" fill="#00f5d4" font-family="monospace" font-size="13">$ hackathon --duration 36h</text>
+    <text x="20" y="85" fill="#e2e8f0" font-family="monospace" font-size="12">[+] Track: AI, Web3, FinTech, HealthTech</text>
+    <text x="20" y="105" fill="#38bdf8" font-family="monospace" font-size="12">[+] Teams registered: 240+ teams</text>
+    <text x="20" y="125" fill="#facc15" font-family="monospace" font-size="12">[!] Status: Mentorship in progress...</text>
+    <text x="20" y="150" fill="#10b981" font-family="monospace" font-size="13">&gt; INNOVATING THE FUTURE _</text>
+    
+    <!-- Floating 36H Badge -->
+    <g transform="translate(190, 130)">
+      <circle cx="30" cy="30" r="30" fill="#05b292"/>
+      <text x="30" y="28" text-anchor="middle" fill="#003554" font-family="sans-serif" font-size="13" font-weight="900">36H</text>
+      <text x="30" y="42" text-anchor="middle" fill="#003554" font-family="sans-serif" font-size="9" font-weight="800">NON-STOP</text>
+    </g>
+  </g>
+  
+  <!-- Left Side Text -->
+  <g transform="translate(60, 110)">
+    <rect x="0" y="0" width="195" height="32" rx="16" fill="#00f5d4" fill-opacity="0.15" stroke="#00f5d4" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="4" fill="#00f5d4"/>
+    <text x="32" y="21" fill="#00f5d4" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">NATIONAL HACKATHON</text>
+    
+    <text x="0" y="80" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800">HACK-O-UTSAV 4.0</text>
+    <text x="0" y="115" fill="#bae6fd" font-family="'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="500">36-Hour National Level Hackathon &amp; Ideathon</text>
+    
+    <!-- Badges -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="130" height="50" rx="8" fill="#003554" stroke="#00f5d4" stroke-width="1"/>
+      <text x="16" y="22" fill="#00f5d4" font-family="sans-serif" font-size="11" font-weight="600">CASH PRIZES</text>
+      <text x="16" y="40" fill="#facc15" font-family="sans-serif" font-size="14" font-weight="700">₹ 3,50,000</text>
+      
+      <rect x="145" y="0" width="130" height="50" rx="8" fill="#003554" stroke="#00f5d4" stroke-width="1"/>
+      <text x="161" y="22" fill="#00f5d4" font-family="sans-serif" font-size="11" font-weight="600">HIRING PARTNERS</text>
+      <text x="161" y="40" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">15+ Tech Cos</text>
+      
+      <rect x="290" y="0" width="130" height="50" rx="8" fill="#003554" stroke="#00f5d4" stroke-width="1"/>
+      <text x="306" y="22" fill="#00f5d4" font-family="sans-serif" font-size="11" font-weight="600">FORMAT</text>
+      <text x="306" y="40" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">Offline &amp; Labs</text>
+    </g>
+  </g>
+  
+  <text x="740" y="420" text-anchor="end" fill="#ffffff" fill-opacity="0.2" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="2">IEM-UEM CODE FEST</text>
+</svg>

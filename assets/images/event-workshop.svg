@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-work" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg-work)"/>
+  
+  <!-- Cloud & Container graphics -->
+  <g transform="translate(560, 140)" fill="none" stroke="#818cf8" stroke-width="2">
+    <!-- Cloud shape -->
+    <path d="M 40,80 Q 20,80 20,60 Q 20,40 45,40 Q 55,10 90,20 Q 120,5 140,35 Q 160,35 160,60 Q 160,80 130,80 Z" fill="#4338ca" opacity="0.6"/>
+    <!-- Docker Containers -->
+    <rect x="50" y="95" width="28" height="24" rx="3" fill="#6366f1"/>
+    <rect x="83" y="95" width="28" height="24" rx="3" fill="#818cf8"/>
+    <rect x="116" y="95" width="28" height="24" rx="3" fill="#a5b4fc"/>
+    <rect x="66" y="65" width="28" height="24" rx="3" fill="#4f46e5"/>
+    <rect x="99" y="65" width="28" height="24" rx="3" fill="#6366f1"/>
+  </g>
+  
+  <g transform="translate(60, 110)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="#818cf8" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="4" fill="#a5b4fc"/>
+    <text x="32" y="21" fill="#c7d2fe" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">HANDS-ON WORKSHOP</text>
+    
+    <text x="0" y="80" fill="#ffffff" font-family="'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800">WEB3 &amp; CLOUD NATIVE</text>
+    <text x="0" y="115" fill="#e0e7ff" font-family="'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="500">Kubernetes, Microservices, Smart Contracts &amp; AWS</text>
+    
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="135" height="50" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+      <text x="16" y="22" fill="#a5b4fc" font-family="sans-serif" font-size="11" font-weight="600">HANDS-ON LAB</text>
+      <text x="16" y="40" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="700">Live Deploy</text>
+      
+      <rect x="150" y="0" width="135" height="50" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+      <text x="166" y="22" fill="#a5b4fc" font-family="sans-serif" font-size="11" font-weight="600">KIT INCLUDED</text>
+      <text x="166" y="40" fill="#facc15" font-family="sans-serif" font-size="14" font-weight="700">Cloud Credits</text>
+    </g>
+  </g>
+  <text x="740" y="420" text-anchor="end" fill="#ffffff" fill-opacity="0.25" font-family="sans-serif" font-size="14" font-weight="700">IEM-UEM DEVELOPER CLUB</text>
+</svg>

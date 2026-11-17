@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IEM-UEM University Events Portal - Discover, connect, and celebrate technical fests, cultural galas, hackathons, seminars, and sports championships across IEM and UEM campuses.">
+  <meta name="keywords" content="IEM, UEM, University Events, TechFest, Euphoria, Innovision, Hack-O-Utsav, Kolkata, Engineering Events">
+  <title>IEM-UEM University Events Portal | Discover. Connect. Celebrate.</title>
+  
+  <!-- Favicon using official college logo -->
+  <link rel="icon" type="image/png" href="iem-uem-logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Inter for clean academic/modern aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-content">
+      <span class="announcement-badge">CAMPUS NOTICE</span>
+      <p class="announcement-text">
+        Registrations are now open for <strong>Innovision 2026</strong> &amp; <strong>Hack-O-Utsav 4.0</strong>! Early-bird slots filling quickly.
+      </p>
+      <a href="#upcoming" class="announcement-link">Explore Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header & Sticky Navigation Bar -->
+  <header id="mainHeader" class="main-header">
+    <div class="container nav-container">
+      <!-- Official College Logo -->
+      <a href="#home" class="logo-link" aria-label="IEM-UEM Events Portal Home">
+        <img src="iem-uem-logo.png" alt="IEM-UEM Institute and University of Engineering and Management Official Logo" class="college-logo" id="headerLogo">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#featured" class="nav-link">Events</a></li>
+          <li><a href="#upcoming" class="nav-link">Upcoming Events</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <a href="#upcoming" class="btn btn-primary nav-cta-btn">
+          <span>Explore Events</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        
+        <!-- Mobile Menu Toggle Button (Hamburger) -->
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileNavMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-out Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#featured" class="mobile-nav-link">Featured Events</a></li>
+          <li><a href="#upcoming" class="mobile-nav-link">All Upcoming Events</a></li>
+          <li><a href="#about" class="mobile-nav-link">About IEM-UEM</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact &amp; Help</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <a href="#upcoming" class="btn btn-primary btn-block mobile-cta-btn">Explore All Events</a>
+          <button class="btn btn-outline btn-block" id="mobileHostBtn">Host an Event</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-grid">
+          <!-- Hero Text Content -->
+          <div class="hero-text-content">
+            <div class="hero-badge">
+              <span class="pulse-indicator"></span>
+              <span class="badge-text">Official IEM-UEM University Events Portal</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Discover. <span class="gradient-text">Connect.</span> Celebrate.
+            </h1>
+            
+            <p class="hero-subtitle">
+              Explore the events, ideas, competitions, and experiences that bring the IEM-UEM community together. From national hackathons and flagship techfests to cultural galas and research seminars.
+            </p>
+            
+            <div class="hero-cta-group">
+              <a href="#upcoming" class="btn btn-primary btn-lg">
+                <span>Explore Events</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="btn btn-secondary btn-lg" id="openHostModalBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <span>Host an Event</span>
+              </button>
+            </div>
+
+            <!-- Event Statistics Counter -->
+            <div class="hero-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number" data-target="45">45+</span>
+                <span class="stat-label">Annual Events</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="15000">15,000+</span>
+                <span class="stat-label">Student Footfall</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="35">35+</span>
+                <span class="stat-label">Clubs &amp; Societies</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-target="15">₹ 15L+</span>
+                <span class="stat-label">Prizes &amp; Grants</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Spotlight & Countdown Card -->
+          <div class="hero-spotlight-wrapper">
+            <div class="spotlight-card">
+              <div class="spotlight-header">
+                <span class="spotlight-tag">UPCOMING FLAGSHIP EVENT</span>
+                <span class="status-live-badge"><span class="dot"></span> Registration Open</span>
+              </div>
+              
+              <div class="spotlight-image-box">
+                <img src="assets/images/event-techfest.svg" alt="Innovision 2026 Techfest Banner" class="spotlight-img">
+                <div class="spotlight-badge">Technical Fest</div>
+              </div>
+
+              <div class="spotlight-body">
+                <h3 class="spotlight-title">INNOVISION 2026</h3>
+                <p class="spotlight-meta">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span>March 24 - 26, 2026 &bull; IEM Salt Lake Campus</span>
+                </p>
+
+                <!-- Live Countdown Timer -->
+                <div class="countdown-wrapper" id="marqueeCountdown" data-target-date="2026-03-24T09:30:00">
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdownDays">00</span>
+                    <span class="countdown-label">Days</span>
+                  </div>
+                  <span class="countdown-separator">:</span>
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdownHours">00</span>
+                    <span class="countdown-label">Hours</span>
+                  </div>
+                  <span class="countdown-separator">:</span>
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdownMinutes">00</span>
+                    <span class="countdown-label">Mins</span>
+                  </div>
+                  <span class="countdown-separator">:</span>
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdownSeconds">00</span>
+                    <span class="countdown-label">Secs</span>
+                  </div>
+                </div>
+
+                <div class="spotlight-actions">
+                  <button class="btn btn-primary btn-block open-quick-register" data-event-id="1">
+                    Register for Innovision 2026
+                  </button>
+                  <button class="btn btn-outline-light btn-block view-quick-details" data-event-id="1">
+                    View Full Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Events Section -->
+    <section id="featured" class="section featured-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">CAMPUS HIGHLIGHTS</span>
+          <h2 class="section-title">Featured Flagship Events</h2>
+          <p class="section-subtitle">
+            Experience our largest signature annual festivals bringing together participants from across India.
+          </p>
+        </div>
+
+        <div class="featured-events-grid" id="featuredEventsGrid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events Section with Search & Category Filters -->
+    <section id="upcoming" class="section upcoming-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">SCHEDULE &amp; CALENDAR</span>
+          <h2 class="section-title">All Upcoming University Events</h2>
+          <p class="section-subtitle">
+            Filter by your favorite categories or search for specific competitions, workshops, and gatherings.
+          </p>
+        </div>
+
+        <!-- Controls: Search Bar & Category Filters -->
+        <div class="events-filter-card">
+          <!-- Search Input Box -->
+          <div class="search-box-wrapper">
+            <div class="search-input-group">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input 
+                type="text" 
+                id="eventSearchInput" 
+                class="search-input" 
+                placeholder="Search events by name, keyword, or venue (e.g. Hackathon, AI, Robotics, Music)..."
+                aria-label="Search events"
+              >
+              <button id="clearSearchBtn" class="clear-search-btn" aria-label="Clear search query" style="display: none;">
+                &times;
+              </button>
+            </div>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="category-filters-container" role="group" aria-label="Event categories filter">
+            <button class="category-btn active" data-category="All">
+              <span class="cat-icon">&#9679;</span> All Events
+            </button>
+            <button class="category-btn" data-category="Technical">
+              <span class="cat-icon">&#128187;</span> Technical
+            </button>
+            <button class="category-btn" data-category="Cultural">
+              <span class="cat-icon">&#127926;</span> Cultural
+            </button>
+            <button class="category-btn" data-category="Workshop">
+              <span class="cat-icon">&#128295;</span> Workshop
+            </button>
+            <button class="category-btn" data-category="Sports">
+              <span class="cat-icon">&#9917;</span> Sports
+            </button>
+            <button class="category-btn" data-category="Seminar">
+              <span class="cat-icon">&#127891;</span> Seminar
+            </button>
+          </div>
+
+          <!-- Active Filter Results Summary -->
+          <div class="filter-results-bar">
+            <span id="resultsCountText" class="results-count-text">Showing 9 events</span>
+            <button id="resetAllFiltersBtn" class="reset-filters-link" style="display: none;">Reset all filters</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Event Cards Grid -->
+        <div class="upcoming-events-grid" id="upcomingEventsGrid" aria-live="polite">
+          <!-- Populated dynamically via script.js -->
+        </div>
+
+        <!-- No Events Found State -->
+        <div class="no-events-state" id="noEventsState" style="display: none;">
+          <div class="no-events-icon-wrapper">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+          <h3 class="no-events-title">No Events Found</h3>
+          <p class="no-events-text">
+            We couldn't find any events matching your selected category and search keywords. Try adjusting your query or resetting filters.
+          </p>
+          <button class="btn btn-primary" id="emptyStateResetBtn">View All Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About IEM-UEM Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: About Content -->
+          <div class="about-content">
+            <span class="section-badge">CAMPUS LIFE &amp; IMPACT</span>
+            <h2 class="section-title">Fostering Innovation, Leadership &amp; Community</h2>
+            <p class="about-lead">
+              At IEM-UEM Group (Institute of Engineering &amp; Management / University of Engineering &amp; Management), university events are more than extracurriculars—they are dynamic launchpads for talent, creativity, and interdisciplinary collaboration.
+            </p>
+            <p class="about-desc">
+              Since 1989, our student community has continuously championed academic rigour alongside transformative real-world projects. Our university events culture is designed around five core development pillars:
+            </p>
+
+            <!-- 5 Core Pillars Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4 class="pillar-title">Technical Innovation</h4>
+                  <p class="pillar-text">Hands-on hackathons, robotics tournaments, and coding sprints solving authentic technological challenges.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"></path>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4 class="pillar-title">Creativity &amp; Expression</h4>
+                  <p class="pillar-text">Vibrant platforms for performing arts, band battles, theatrical productions, photography, and cultural heritage.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4 class="pillar-title">Leadership &amp; Organization</h4>
+                  <p class="pillar-text">Student-led societies managing logistics, sponsorships, marketing, and cross-functional teams for multi-thousand participant events.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon-box">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+                <div class="pillar-info">
+                  <h4 class="pillar-title">Teamwork &amp; Collaboration</h4>
+                  <p class="pillar-text">Uniting students across Computer Science, Electronics, Mechanical, Biotechnology, and Business Administration.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-footer-badges">
+              <span class="academic-badge">&#10003; NAAC 'A' Grade Accredited</span>
+              <span class="academic-badge">&#10003; NIRF Ranked Institution</span>
+              <span class="academic-badge">&#10003; 35+ Active Campus Clubs</span>
+            </div>
+          </div>
+
+          <!-- Right: Campus Graphic Card -->
+          <div class="about-visual">
+            <div class="campus-card">
+              <img src="assets/images/about-campus.svg" alt="IEM-UEM Group Campus and Innovation Complex" class="campus-card-img">
+              <div class="campus-card-overlay">
+                <div class="campus-quote-box">
+                  <p class="campus-quote">
+                    "Every event at IEM-UEM is an opportunity to transform theoretical curiosity into practical, industry-ready capability."
+                  </p>
+                  <span class="campus-quote-author">&mdash; IEM-UEM Event Coordination Directorate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Coordination Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">GET IN TOUCH</span>
+          <h2 class="section-title">Events Committee &amp; Coordination</h2>
+          <p class="section-subtitle">
+            Have questions about an upcoming event, sponsorship opportunities, or campus access? Reach out to our organizing team.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Information Cards -->
+          <div class="contact-info-column">
+            <!-- Organization Card -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-title">Central Event Coordination Council</h4>
+                <p class="info-text">Student Affairs &amp; Cultural Affairs Directorate, IEM-UEM Group</p>
+                <span class="info-sub">Office Hours: Monday &ndash; Saturday, 9:00 AM &ndash; 6:00 PM</span>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-title">Email Coordinates</h4>
+                <p class="info-text">
+                  <a href="mailto:events@iem.edu.in" class="contact-link">events@iem.edu.in</a> (IEM Salt Lake)
+                </p>
+                <p class="info-text">
+                  <a href="mailto:events@uem.edu.in" class="contact-link">events@uem.edu.in</a> (UEM New Town)
+                </p>
+              </div>
+            </div>
+
+            <!-- Locations Card -->
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4 class="info-title">Campus Venues &amp; Addresses</h4>
+                <p class="info-text">
+                  <strong>IEM Kolkata:</strong> Sector V, Salt Lake Electronics Complex, Kolkata, West Bengal 700091
+                </p>
+                <p class="info-text">
+                  <strong>UEM Kolkata:</strong> University Area, Plot No. III-B/5, New Town, Kolkata 700160
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Media Channels -->
+            <div class="social-channels-box">
+              <h4 class="social-title">Connect on Official Media</h4>
+              <div class="social-links-grid">
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="LinkedIn">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="Instagram">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="YouTube">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  <span>YouTube</span>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="Facebook">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card">
+              <h3 class="form-card-title">Send an Event Inquiry</h3>
+              <p class="form-card-sub">
+                Are you a participant, society leader, or prospective sponsor? Submit your query directly to our desk.
+              </p>
+
+              <form id="contactForm" class="inquiry-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">Your Name <span class="req">*</span></label>
+                    <input type="text" id="contactName" class="form-control" placeholder="e.g. Ananya Sen" required>
+                    <span class="field-error" id="contactNameError"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Email Address <span class="req">*</span></label>
+                    <input type="email" id="contactEmail" class="form-control" placeholder="e.g. ananya@example.com" required>
+                    <span class="field-error" id="contactEmailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject" class="form-label">Subject / Purpose <span class="req">*</span></label>
+                  <select id="contactSubject" class="form-control" required>
+                    <option value="">-- Choose Purpose --</option>
+                    <option value="Event Registration Query">Event Registration Inquiry</option>
+                    <option value="Sponsorship & Partnership">Sponsorship &amp; Brand Partnership</option>
+                    <option value="Inter-College Participation">Inter-College Contingent Entry</option>
+                    <option value="Volunteer / Organizing Team">Volunteer / Student Committee</option>
+                    <option value="General Query">General Question</option>
+                  </select>
+                  <span class="field-error" id="contactSubjectError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Message Details <span class="req">*</span></label>
+                  <textarea id="contactMessage" class="form-control" rows="4" placeholder="Briefly describe your question or requirement..." required></textarea>
+                  <span class="field-error" id="contactMessageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">
+                  <span>Send Message</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="main-footer">
+    <div class="container footer-top-grid">
+      <!-- Col 1: College Info & Official Logo -->
+      <div class="footer-col footer-brand-col">
+        <a href="#home" class="footer-logo-wrapper" aria-label="IEM-UEM Homepage">
+          <img src="iem-uem-logo.png" alt="IEM-UEM University Group Logo" class="footer-logo" id="footerLogo">
+        </a>
+        <p class="footer-desc">
+          The official university events hub for the Institute of Engineering &amp; Management (IEM) and University of Engineering &amp; Management (UEM). Nurturing technological brilliance and cultural vitality since 1989.
+        </p>
+        <div class="footer-accreditation">
+          <span class="badge-tag">NAAC 'A' Grade</span>
+          <span class="badge-tag">AICTE Approved</span>
+          <span class="badge-tag">UGC Recognized</span>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="footer-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Featured Events</a></li>
+          <li><a href="#upcoming">Upcoming Events</a></li>
+          <li><a href="#about">About IEM-UEM</a></li>
+          <li><a href="#contact">Contact Coordination</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Event Categories -->
+      <div class="footer-col">
+        <h4 class="footer-title">Event Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#upcoming" class="footer-cat-link" data-cat="Technical">Technical Fests &amp; Hackathons</a></li>
+          <li><a href="#upcoming" class="footer-cat-link" data-cat="Cultural">Cultural Galas &amp; Band Battles</a></li>
+          <li><a href="#upcoming" class="footer-cat-link" data-cat="Workshop">Hands-on Workshops &amp; Bootcamps</a></li>
+          <li><a href="#upcoming" class="footer-cat-link" data-cat="Sports">Inter-College Sports Championships</a></li>
+          <li><a href="#upcoming" class="footer-cat-link" data-cat="Seminar">International Academic Seminars</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Campus Locations -->
+      <div class="footer-col">
+        <h4 class="footer-title">Campuses</h4>
+        <div class="campus-address-entry">
+          <strong>IEM Campus:</strong>
+          <p>Y-12, Block EP, Sector V, Salt Lake, Kolkata, WB 700091</p>
+        </div>
+        <div class="campus-address-entry">
+          <strong>UEM Campus:</strong>
+          <p>University Area, Action Area III, New Town, Kolkata, WB 700160</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Line -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="copyright-text">
+          &copy; 2026 Institute of Engineering &amp; Management (IEM) &amp; University of Engineering &amp; Management (UEM). All rights reserved.
+        </p>
+        <p class="demo-notice">
+          Educational Demonstration Events Portal &bull; Designed &amp; Developed with Vanilla Web Standards.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Event Details Modal -->
+  <div class="modal-backdrop" id="eventDetailsModal" role="dialog" aria-modal="true" aria-labelledby="modalEventTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Close Button -->
+        <button class="modal-close-btn" id="closeEventModalBtn" aria-label="Close event details modal">&times;</button>
+        
+        <!-- Modal Banner Image -->
+        <div class="modal-image-container">
+          <img src="" alt="Event banner" id="modalEventImg" class="modal-banner-img">
+          <span class="modal-category-badge" id="modalEventCategory">Category</span>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-header-meta">
+            <span class="modal-event-id" id="modalEventCode">CODE</span>
+            <span class="modal-eligibility-badge" id="modalEventEligibility">Open to All Colleges</span>
+          </div>
+
+          <h2 class="modal-event-title" id="modalEventTitle">Event Title</h2>
+
+          <!-- Quick Event Details Bar -->
+          <div class="modal-info-grid">
+            <div class="info-cell">
+              <span class="cell-label">Date &amp; Time</span>
+              <span class="cell-val" id="modalEventDateTime">TBD</span>
+            </div>
+            <div class="info-cell">
+              <span class="cell-label">Campus &amp; Venue</span>
+              <span class="cell-val" id="modalEventVenue">TBD</span>
+            </div>
+            <div class="info-cell">
+              <span class="cell-label">Team Size</span>
+              <span class="cell-val" id="modalEventTeamSize">Individual / Team</span>
+            </div>
+            <div class="info-cell">
+              <span class="cell-label">Registration Fee</span>
+              <span class="cell-val" id="modalEventFee">Free Entry</span>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="modal-section-block">
+            <h4 class="block-heading">About This Event</h4>
+            <p class="modal-description-text" id="modalEventDescription">
+              Detailed event description.
+            </p>
+          </div>
+
+          <!-- Highlights List -->
+          <div class="modal-section-block">
+            <h4 class="block-heading">Event Highlights &amp; Schedule</h4>
+            <ul class="modal-highlights-list" id="modalEventHighlights">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+
+          <!-- Awards / Certification note -->
+          <div class="modal-award-box">
+            <div class="award-icon">&#127942;</div>
+            <div class="award-text">
+              <strong id="modalEventPrizeTitle">Prizes &amp; Certifications</strong>
+              <p id="modalEventPrizeDesc">Official Certificate of Participation and Cash Prizes awarded to winners.</p>
+            </div>
+          </div>
+
+          <!-- Modal Action Footer -->
+          <div class="modal-footer-actions">
+            <button class="btn btn-primary btn-lg" id="modalRegisterActionBtn">
+              <span>Register for this Event</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <button class="btn btn-outline" id="modalCloseSecondaryBtn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Event Registration Modal -->
+  <div class="modal-backdrop" id="registrationModal" role="dialog" aria-modal="true" aria-labelledby="registerModalHeading" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="closeRegisterModalBtn" aria-label="Close registration modal">&times;</button>
+        
+        <div class="registration-header">
+          <div class="reg-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+          </div>
+          <div>
+            <h3 class="reg-title" id="registerModalHeading">Event Registration</h3>
+            <p class="reg-subtitle">Secure your participant seat for IEM-UEM university events.</p>
+          </div>
+        </div>
+
+        <!-- Demonstration Notice Banner -->
+        <div class="demo-banner">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <span><strong>Demonstration Mode:</strong> Client-side simulation only. No private data is transmitted to an external server.</span>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="eventRegistrationForm" class="registration-form" novalidate>
+          <!-- Event Selector -->
+          <div class="form-group">
+            <label for="regEventSelect" class="form-label">Select Event <span class="req">*</span></label>
+            <select id="regEventSelect" class="form-control" required>
+              <option value="">-- Choose an Event --</option>
+              <!-- Dynamically populated from JS array -->
+            </select>
+            <span class="field-error" id="regEventError"></span>
+          </div>
+
+          <!-- Student Name -->
+          <div class="form-group">
+            <label for="regStudentName" class="form-label">Full Name <span class="req">*</span></label>
+            <input type="text" id="regStudentName" class="form-control" placeholder="e.g. Rahul Mukherjee" required autocomplete="name">
+            <span class="field-error" id="regNameError"></span>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="regEmail" class="form-label">Email Address <span class="req">*</span></label>
+            <input type="email" id="regEmail" class="form-control" placeholder="e.g. rahul.m@iem.edu.in or personal email" required autocomplete="email">
+            <span class="field-error" id="regEmailError"></span>
+          </div>
+
+          <div class="form-row">
+            <!-- College / Department -->
+            <div class="form-group">
+              <label for="regDepartment" class="form-label">College &amp; Department <span class="req">*</span></label>
+              <select id="regDepartment" class="form-control" required>
+                <option value="">-- Select College / Dept --</option>
+                <option value="IEM - Computer Science & Engineering (CSE)">IEM - Computer Science &amp; Engg (CSE)</option>
+                <option value="IEM - Information Technology (IT)">IEM - Information Technology (IT)</option>
+                <option value="IEM - Electronics & Communication (ECE)">IEM - Electronics &amp; Comm (ECE)</option>
+                <option value="IEM - Electrical Engineering (EE)">IEM - Electrical Engg (EE)</option>
+                <option value="IEM - Mechanical Engineering (ME)">IEM - Mechanical Engg (ME)</option>
+                <option value="IEM - Management Studies (MBA/BBA)">IEM - Management Studies (MBA/BBA)</option>
+                <option value="UEM - Computer Science & Engineering">UEM - Computer Science &amp; Engg</option>
+                <option value="UEM - Biotechnology & Sciences">UEM - Biotechnology &amp; Sciences</option>
+                <option value="UEM - Law & Humanities">UEM - Law &amp; Humanities</option>
+                <option value="External University / Other College">External University / Other College</option>
+              </select>
+              <span class="field-error" id="regDeptError"></span>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="regPhone" class="form-label">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="regPhone" class="form-control" placeholder="10-digit mobile number" required maxlength="10">
+              <span class="field-error" id="regPhoneError"></span>
+            </div>
+          </div>
+
+          <!-- Year of Study (Bonus practical field) -->
+          <div class="form-group">
+            <label for="regYear" class="form-label">Current Academic Year</label>
+            <select id="regYear" class="form-control">
+              <option value="1st Year (Freshman)">1st Year (Freshman)</option>
+              <option value="2nd Year (Sophomore)" selected>2nd Year (Sophomore)</option>
+              <option value="3rd Year (Junior)">3rd Year (Junior)</option>
+              <option value="4th Year (Senior)">4th Year (Senior)</option>
+              <option value="Postgraduate / Research">Postgraduate / Research</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-actions-bar">
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitRegistrationBtn">
+              <span>Confirm Registration &amp; Generate Pass</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Registration Success Ticket Modal -->
+  <div class="modal-backdrop" id="ticketSuccessModal" role="dialog" aria-modal="true" aria-labelledby="ticketSuccessTitle" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content success-modal-content">
+        <button class="modal-close-btn" id="closeTicketModalBtn" aria-label="Close ticket modal">&times;</button>
+        
+        <div class="success-banner-top">
+          <div class="success-check-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-modal-heading" id="ticketSuccessTitle">Registration Confirmed!</h3>
+          <p class="success-modal-desc">
+            Your registration has been successfully simulated. Here is your official IEM-UEM digital event credential.
+          </p>
+        </div>
+
+        <!-- Rendered Digital Ticket Pass Card -->
+        <div class="digital-ticket-card" id="digitalTicketCard">
+          <div class="ticket-header">
+            <div class="ticket-brand">
+              <img src="iem-uem-logo.png" alt="IEM-UEM Logo" class="ticket-logo">
+              <span class="ticket-type-label">OFFICIAL PASS</span>
+            </div>
+            <div class="ticket-id" id="ticketIdDisplay">PASS #IEM-2026-8492</div>
+          </div>
+
+          <div class="ticket-body">
+            <h4 class="ticket-event-name" id="ticketEventName">Event Name</h4>
+            <div class="ticket-details-grid">
+              <div class="ticket-detail">
+                <span class="t-label">Participant</span>
+                <span class="t-val" id="ticketStudentName">Student Name</span>
+              </div>
+              <div class="ticket-detail">
+                <span class="t-label">Institution / Dept</span>
+                <span class="t-val" id="ticketDepartment">CSE Dept</span>
+              </div>
+              <div class="ticket-detail">
+                <span class="t-label">Date &amp; Time</span>
+                <span class="t-val" id="ticketDateTime">March 24, 2026</span>
+              </div>
+              <div class="ticket-detail">
+                <span class="t-label">Venue</span>
+                <span class="t-val" id="ticketVenue">Main Auditorium</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perforated Ticket Divider -->
+          <div class="ticket-divider">
+            <span class="ticket-notch notch-left"></span>
+            <span class="ticket-dots"></span>
+            <span class="ticket-notch notch-right"></span>
+          </div>
+
+          <div class="ticket-footer">
+            <div class="ticket-barcode-sim">
+              <!-- CSS Generated Barcode Lines -->
+              <div class="barcode-lines"></div>
+              <span class="barcode-number" id="ticketBarcodeText">IEMUEM-2026-REG-PASS-VERIFIED</span>
+            </div>
+            <div class="ticket-stamp">VERIFIED DEMO</div>
+          </div>
+        </div>
+
+        <div class="ticket-disclaimer-text">
+          * Note: This is an educational demonstration ticket pass generated client-side. No actual database records were modified.
+        </div>
+
+        <div class="ticket-actions">
+          <button class="btn btn-primary btn-block" id="printTicketBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print or Save Pass</span>
+          </button>
+          <button class="btn btn-outline btn-block" id="doneTicketBtn">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Host an Event Proposal Modal -->
+  <div class="modal-backdrop" id="hostEventModal" role="dialog" aria-modal="true" aria-labelledby="hostModalHeading" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="closeHostModalBtn" aria-label="Close host event modal">&times;</button>
+        
+        <div class="registration-header">
+          <div class="reg-icon-wrapper host-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="reg-title" id="hostModalHeading">Host a University Event</h3>
+            <p class="reg-subtitle">Propose an event for IEM-UEM campus approval &amp; listing.</p>
+          </div>
+        </div>
+
+        <div class="host-guidelines-box">
+          <h5 class="guide-title">Guidelines for Student Clubs &amp; Societies:</h5>
+          <ul class="guide-list">
+            <li>Events must be sponsored or mentored by an IEM-UEM Faculty Advisor.</li>
+            <li>Submit proposals at least 3 weeks prior to tentative event schedule.</li>
+            <li>Approved proposals will be allocated campus labs, auditoriums, and budget support.</li>
+          </ul>
+        </div>
+
+        <form id="hostEventProposalForm" class="registration-form" novalidate>
+          <div class="form-group">
+            <label for="hostClubName" class="form-label">Club / Society / Organizing Body <span class="req">*</span></label>
+            <input type="text" id="hostClubName" class="form-control" placeholder="e.g. IEM Coding Club or UEM Robotics Society" required>
+            <span class="field-error" id="hostClubError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="hostEventTitle" class="form-label">Proposed Event Title <span class="req">*</span></label>
+            <input type="text" id="hostEventTitle" class="form-control" placeholder="e.g. National Cyber Security Workshop 2026" required>
+            <span class="field-error" id="hostTitleError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hostCategory" class="form-label">Category <span class="req">*</span></label>
+              <select id="hostCategory" class="form-control" required>
+                <option value="Technical">Technical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Sports">Sports</option>
+                <option value="Seminar">Seminar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="hostExpectedSeats" class="form-label">Expected Footfall</label>
+              <input type="number" id="hostExpectedSeats" class="form-control" placeholder="e.g. 150" min="10">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hostLeadEmail" class="form-label">Lead Organizer / Student Head Email <span class="req">*</span></label>
+            <input type="email" id="hostLeadEmail" class="form-control" placeholder="organizer@iem.edu.in" required>
+            <span class="field-error" id="hostEmailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="hostSummary" class="form-label">Short Concept Summary <span class="req">*</span></label>
+            <textarea id="hostSummary" class="form-control" rows="3" placeholder="Explain the key objectives, required venues, and target audience..." required></textarea>
+            <span class="field-error" id="hostSummaryError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitHostBtn">
+            <span>Submit Proposal for Review</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="assertive" aria-atomic="true"></div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
